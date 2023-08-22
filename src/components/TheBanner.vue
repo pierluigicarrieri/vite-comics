@@ -31,7 +31,7 @@
 </script>
 
 <template>
-    <div class="banner bg-primary">
+    <div class="banner bg-primary z-1">
         <div class="container">
             <nav class="d-flex justify-content-center align-items-center fs-6">
                 <ul class="nav p-5">
