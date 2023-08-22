@@ -6,23 +6,23 @@
                     listItems: [
                         {
                             name: "DIGITAL COMICS",
-                            image: "digital-comics"
+                            image: "comics-digital-comics.png"
                         },
                         {
                             name: "DC MERCHANDISE",
-                            image: "merchandise"
+                            image: "comics-merchandise.png"
                         },
                         {
                             name: "SUBSCRIPTION",
-                            image: "subscriptions"
+                            image: "comics-subscriptions.png"
                         },
                         {
                             name: "COMIC SHOP LOCATOR",
-                            image: "shop-locator"
+                            image: "comics-shop-locator.png"
                         },
                         {
                             name: "DC POWER VISA",
-                            image: "power-visa"
+                            image: "dc-power-visa.svg"
                         }
                     ]
                 }
@@ -34,10 +34,10 @@
 
     <div class="banner bg-primary">
         <div class="container">
-            <nav class="d-flex align-items-center">
+            <nav class="d-flex justify-content-center align-items-center fs-6">
                 <ul class="nav p-5">
-                    <li class="nav-item d-flex align-items-center" v-for="element in listItems">
-                        <img v-bind:src="`../assets/img/buy-comics-` + element.image + `.png`" alt="">
+                    <li class="nav-item d-flex align-items-center px-4" v-for="element in listItems">
+                        <img v-bind:src="`/public/img/buy-` + element.image" alt="">
                         <a class="nav-link" href="#">{{ element.name }}</a>
                     </li>
                 </ul>
@@ -48,13 +48,16 @@
 </template>
 
 <style scoped>
-
 img {
-    height: 60px;
+    height: 50px;
 }
 
 a {
     color: #FFFFFF;
+    font-size: 0.8rem;
 }
 
+li:last-child > img {
+    height: 40px;
+}
 </style>
