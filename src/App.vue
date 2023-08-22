@@ -19,7 +19,7 @@
 <template>
   <TheHeader></TheHeader>
   <main class="bg-dark text-white">
-    <div class="container py-5 fs-4"> -- > Content goes here --</div>
+    <div class="container py-4 fs-4"> -- > Content goes here --</div>
   </main>
   <TheBanner></TheBanner>
   <TheFooter></TheFooter>
