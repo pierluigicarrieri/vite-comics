@@ -33,13 +33,32 @@
 
 <template>
 
-    <footer class="text-white flex-grow-1 d-flex flex-column">
+    <footer class="flex-grow-1 d-flex flex-column">
             <div class="footer-top flex-grow-1">
                 <div class="container d-flex justify-content-between">
-                    <div class="footer-left">
-                        <nav></nav>
-                        <nav></nav>
-                        <nav></nav>
+                    <div class="footer-left d-flex py-3">
+                        <ul class="nav d-flex flex-column px-2">
+                            <li class="nav-item title"><strong>{{topFooterItems[0].title}}</strong></li>
+                            <li class="nav-item" v-for="element in topFooterItems[0].items">
+                                <a href="#">{{element}}</a>
+                            </li>
+                            <li class="nav-item title mt-4"><strong>{{topFooterItems[1].title}}</strong></li>
+                            <li class="nav-item" v-for="element in topFooterItems[1].items">
+                                <a href="#">{{element}}</a>
+                            </li>
+                        </ul>
+                        <ul class="nav d-flex flex-column px-2">
+                            <li class="nav-item title"><strong>{{topFooterItems[2].title}}</strong></li>
+                            <li class="nav-item" v-for="element in topFooterItems[2].items">
+                                <a href="#">{{element}}</a>
+                            </li>
+                        </ul>
+                        <ul class="nav d-flex flex-column px-2">
+                            <li class="nav-item title"><strong>{{topFooterItems[3].title}}</strong></li>
+                            <li class="nav-item" v-for="element in topFooterItems[3].items">
+                                <a href="#">{{element}}</a>
+                            </li>
+                        </ul>
                     </div>
                     <div class="footer-right">
                         <img v-bind:src="`/public/img/` + images.logo" alt="">
@@ -70,18 +89,30 @@
     .footer-top {
         background-image: url("/public/img/footer-bg.jpg");
     }
+    .footer-left > ul {
+        font-size: 0.7rem;
+    }
+
+    a {
+        color: #878787;
+        text-decoration: none;
+    }
+
+    li {
+        padding-top: 0.5rem;
+    }
+    .title {
+        color: #FFFFFF;
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+    }
     .footer-right > img {
         height: 550px;
         margin-top: -65px;
         margin-bottom: -65px;
     }
-
     .footer-bottom {
         background-color: #303030;
-    }
-
-    ul {
-        list-style: none;
     }
 
 </style>
