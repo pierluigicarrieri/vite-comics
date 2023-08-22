@@ -6,23 +6,23 @@
                     listItems: [
                         {
                             name: "DIGITAL COMICS",
-                            image: "digital-comics.png"
+                            image: "digital-comics"
                         },
                         {
                             name: "DC MERCHANDISE",
-                            image: "merchandise.png"
+                            image: "merchandise"
                         },
                         {
                             name: "SUBSCRIPTION",
-                            image: "subscriptions.png"
+                            image: "subscriptions"
                         },
                         {
                             name: "COMIC SHOP LOCATOR",
-                            image: "shop-locator.png"
+                            image: "shop-locator"
                         },
                         {
                             name: "DC POWER VISA",
-                            image: "power-visa.png"
+                            image: "power-visa"
                         }
                     ]
                 }
@@ -37,7 +37,7 @@
             <nav class="d-flex align-items-center">
                 <ul class="nav p-5">
                     <li class="nav-item d-flex align-items-center" v-for="element in listItems">
-                        <img v-bind:src="`../assets/img/buy-comics-${element.image}`" alt="">
+                        <img v-bind:src="`../assets/img/buy-comics-` + element.image + `.png`" alt="">
                         <a class="nav-link" href="#">{{ element.name }}</a>
                     </li>
                 </ul>

@@ -12,7 +12,7 @@
 <template>
     <div class="container">
         <header class="bg-warning d-flex justify-content-between">
-            <img class="my-3" src="../assets/img/dc-logo.png" alt="dc-logo">
+            <img class="my-3" src="/public/img/dc-logo.png" alt="dc-logo">
             <nav class="d-flex align-items-center">
                 <ul class="nav">
                     <li class="nav-item" v-for="element in listItems">
