@@ -6,8 +6,8 @@
 
 <template>
 
-    <header>Ciaooo</header>
-
+    <div></div>
+    
 </template>
 
 <style scoped>

@@ -1,5 +1,12 @@
 <script>
   export default {
+    
+    components: {
+        
+        TheHeader,
+        TheBanner,
+        TheFooter
+    }
 
   }
 </script>
