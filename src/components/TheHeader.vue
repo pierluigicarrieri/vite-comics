@@ -6,7 +6,7 @@
 
 <template>
 
-    <header>Ciaooo</header>
+    <header>ciaoooo</header>
 
 </template>
 
