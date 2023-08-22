@@ -31,7 +31,6 @@
 </script>
 
 <template>
-
     <div class="banner bg-primary">
         <div class="container">
             <nav class="d-flex justify-content-center align-items-center fs-6">
@@ -43,8 +42,7 @@
                 </ul>
             </nav>
         </div>
-    </div>
-    
+    </div> 
 </template>
 
 <style scoped>
