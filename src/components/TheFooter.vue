@@ -4,8 +4,8 @@
     data() {
             return {
                 images: {
-                    backgroundImage: "",
-                    logo: ""
+                    backgroundImage: "footer-bg.jpg",
+                    logo: "dc-logo-bg.png"
                 },
                 footerAreas: [
                     {
@@ -32,10 +32,18 @@
 
 <template>
 
-    <footer></footer>
+    <footer class="d-flex text-white">
+        <div class="container">
+            <div class="footer-top">ciaoooo</div>
+            <div class="footer-bottom">belli</div>
+        </div>
+    </footer>
     
 </template>
 
 <style scoped>
-
+    footer {
+        background-image: url("/public/img/footer-bg.jpg");
+        /* height: 400px; */
+    }
 </style>
