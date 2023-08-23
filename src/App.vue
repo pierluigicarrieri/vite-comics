@@ -4,15 +4,21 @@
   import TheBanner from "./components/TheBanner.vue"
   import TheFooter from "./components/TheFooter.vue"
   import TheCard from "./components/TheCard.vue"
+  import assetList from "../assets.js"
+
+  console.log(assetList);
 
   export default {
-    
     components: {
-        
         TheHeader,
         TheBanner,
         TheFooter,
         TheCard
+    },
+    data() {
+      return {
+        assetList
+      }
     }
 
   }
@@ -26,7 +32,7 @@
       <div class="container py-4">
         <div id="current-series" class="bg-primary p-2">CURRENT SERIES</div>
         <div class="row row-cols-6 g-2">
-          <div class="col" v-for="asset in assetList">
+          <div class="col" v-for="(asset) in assetList">
             <TheCard 
             :thumb="asset.thumb" 
             :series="asset.series"
