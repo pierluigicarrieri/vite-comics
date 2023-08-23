@@ -55,6 +55,7 @@
   .jumbo {
     height: 400px;
     width: 100%;
+    margin-bottom: -150px; 
   }
 
   #current-series {
@@ -62,5 +63,6 @@
     width: fit-content;
     position: absolute;
   }
+
 
 </style>
