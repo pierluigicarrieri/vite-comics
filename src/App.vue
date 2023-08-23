@@ -20,7 +20,7 @@
   <div class="main-wrapper d-flex flex-column h-100">
     <TheHeader></TheHeader>
     <main class="bg-dark text-white">
-      <img src="" alt="">
+      <img class="jumbo" src="./assets/jumbotron.jpg" alt="">
       <div class="container py-4 fs-4"> -- > Content goes here --</div>
     </main>
     <TheBanner></TheBanner>
@@ -29,5 +29,10 @@
 </template>
 
 <style>
+
+  .jumbo {
+    height: 400px;
+    width: 100%;
+  }
 
 </style>
