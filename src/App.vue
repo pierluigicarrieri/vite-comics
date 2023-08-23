@@ -26,8 +26,11 @@
       <div class="container py-4">
         <div id="current-series" class="bg-primary p-2">CURRENT SERIES</div>
         <div class="row row-cols-6 g-2">
-          <div class="col">
-            <TheCard></TheCard>
+          <div class="col" v-for="asset in assetList">
+            <TheCard 
+            :thumb="asset.thumb" 
+            :series="asset.series"
+            ></TheCard>
           </div>
         </div>
         <div class="d-flex justify-content-center">

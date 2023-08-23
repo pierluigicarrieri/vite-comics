@@ -9,8 +9,10 @@ export default {
 
 <template>
     <div class="card h-100">
-        <img src="" alt="">
-        <div class="card-body"></div>
+        <img :src="assets.thumb" alt="">
+        <div class="card-body">
+            {{ series }}
+        </div>
     </div>
 </template>
 
