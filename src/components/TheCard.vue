@@ -8,13 +8,18 @@ export default {
 </script>
 
 <template>
-    <div class="card h-100">
-        <img :src="asset.thumb" alt="">
-        <div class="card-body">
+    <div class="card h-100 border-0 text-white">
+        <img :src="thumb" alt="">
+        <div class="card-body bg-dark">
             {{ series }}
         </div>
     </div>
 </template>
 
 <style lang="scss" scoped>
+
+    img {
+        height: 200px;
+    }
+
 </style>
