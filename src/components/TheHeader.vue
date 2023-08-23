@@ -24,7 +24,7 @@
     </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
     img {
         aspect-ratio: 1/1;
         height: 80px;

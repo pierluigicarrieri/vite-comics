@@ -84,7 +84,7 @@
     
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 
     .footer-top {
         background-image: url("/public/img/footer-bg.jpg");
